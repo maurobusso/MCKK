@@ -1,0 +1,8 @@
+{
+  "name": "mckk",
+  "version": "1.0.0",
+  "main": "application.js",
+  "repository": "https://github.com/maurobusso/MCKK.git",
+  "author": "maurobusso <mauro.busso12@gmail.com>",
+  "license": "MIT"
+}
