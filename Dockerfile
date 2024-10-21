@@ -13,12 +13,11 @@ WORKDIR /rails
 
 # Install base packages
 RUN apt-get update -qq && \
-    apt-get install --no-install-recommends -y curl libjemalloc2 libvips sqlite3 && \
+    apt-get install --no-install-recommends -y curl libjemalloc2 libvips sqlite3 nodejs && \
     rm -rf /var/lib/apt/lists /var/cache/apt/archives
 
-RUN apt-get update && \
-    apt-get install --yes --no-install-recommends nodejs &&\
-    npm install -g yarn
+# RUN apt-get update && \
+#     npm install -g yarn
 
 # Set production environment
 ENV RAILS_ENV="production" \
