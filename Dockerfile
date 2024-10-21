@@ -15,6 +15,8 @@ WORKDIR /rails
 RUN apt-get update -qq && \
     apt-get install --no-install-recommends -y curl libjemalloc2 libvips sqlite3 && \
     rm -rf /var/lib/apt/lists /var/cache/apt/archives
+
+RUN apt-get install --yes git curl build-essential
     curl -sL https://deb.nodesource.com/setup_current.x | bash - &&\
     apt-get update && \
     apt-get install --yes --no-install-recommends nodejs &&\
