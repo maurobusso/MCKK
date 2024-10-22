@@ -4,5 +4,8 @@
   "main": "application.js",
   "repository": "https://github.com/maurobusso/MCKK.git",
   "author": "maurobusso <mauro.busso12@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "build:css": "your-css-build-command"
+  }
 }
